@@ -54,7 +54,7 @@ function slowDance(direction, tilesArray) {
 }
 
 // console.log(slowDance("up", tilesArray)) // => 0
-console.log(slowDance("right-down", tilesArray)) // => 3
+// console.log(slowDance("right-down", tilesArray)) // => 3
 
 
 tilesObj = {
@@ -69,4 +69,8 @@ tilesObj = {
 }
 function fastDance(direction, tilesObj) {
   // Code goes here ...
+  return tilesObj[direction];
 }
+
+
+console.log(fastDance("down",tilesObj));
